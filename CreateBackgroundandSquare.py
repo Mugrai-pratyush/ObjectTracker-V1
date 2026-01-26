@@ -7,7 +7,7 @@ def CreateBackground(height,Width):
     for i in range(0,height):
         newline=[]
         for j in range(0,Width):
-            newline.append(0)
+            newline.append(random.randint(0,254))
         bg.append(newline)
     return bg
 def CreateSquare(height,width,side,bg,squarepixelVal):
@@ -26,6 +26,7 @@ def CreateSquare(height,width,side,bg,squarepixelVal):
             w+=1
         h+=1
     return bg
+
     
 
 
